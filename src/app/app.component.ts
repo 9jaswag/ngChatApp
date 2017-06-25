@@ -25,7 +25,6 @@ export class AppComponent {
     });
     this.user = this._afAuth.authState;
     this.user.subscribe(userInfo => this.username = userInfo.displayName);
-    this.user.subscribe(userInfo => this.username = userInfo.photoURL);
   }
 
   login() {

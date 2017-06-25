@@ -1,11 +1,13 @@
 <div class="container">
   <div class="col-md-12 col-sm-12 col-xs-12">
-    <button *ngIf='!(user | async)?.uid' (click)='login()' class="btn btn-default fb-btn">Login With Facebook</button>
-    <button *ngIf='(user | async)?.uid' (click)='logout()' class="btn btn-default fb-btn">Logout</button>
+    <button *ngIf="!(user | async)?.uid" (click)="login()" class="btn btn-default btn-block fb-btn">Login With Facebook</button>
+    <button *ngIf="(user | async)?.uid" (click)="logout()" class="btn btn-default btn-block fb-btn">Logout</button>
   </div>
-  <div class="chat-container" *ngFor='let item of items | async'>
-    <a href="#">{{item.name}}</a>
-    <p>{{item.message}}</p>
+  <div class="col-md-12 col-sm-12 col-xs-12">  
+    <div class="chat-container" *ngFor='let item of items | async'>
+      <a href="#">{{item.name}}</a>
+      <p>{{item.message}}</p>
+    </div>
   </div>
   <input id="message" *ngIf='(user | async)?.uid' type="text" placeholder="Enter your message" (keyup.enter)='chatSend($event.target.value)' [(ngModel)]='chatMsg' />
 </div>
