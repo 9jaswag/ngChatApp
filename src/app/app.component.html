@@ -9,5 +9,7 @@
       <p>{{item.message}}</p>
     </div>
   </div>
-  <input id="message" *ngIf='(user | async)?.uid' type="text" placeholder="Enter your message" (keyup.enter)='chatSend($event.target.value)' [(ngModel)]='chatMsg' />
+  <div class="col-md-12 col-sm-12 col-xs-12">    
+    <input id="message" *ngIf='(user | async)?.uid' type="text" placeholder="Enter your message" (keyup.enter)='chatSend($event.target.value)' [(ngModel)]='chatMsg' />
+  </div>
 </div>
