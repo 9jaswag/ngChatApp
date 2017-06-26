@@ -19,7 +19,7 @@ input#message {
 
 @media (max-width: 768px) {
     input#message {
-    font-size:1.3em;        
+    font-size:1em;        
     }
 }
 .chat-container {
