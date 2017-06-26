@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Live Project
 
-Check out the live project [here](https://ngchatapp.herokuapp.com/).
+Check out the live project [here](https://github.com/9jaswag/ngChatApp).
 
 ## Development server
 
