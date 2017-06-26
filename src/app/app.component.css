@@ -16,6 +16,12 @@ input#message {
     padding:1.2em 0;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    input#message {
+    font-size:1.3em;        
+    }
+}
 .chat-container {
     display:block;
     width:100%;

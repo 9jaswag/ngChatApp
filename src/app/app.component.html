@@ -10,6 +10,6 @@
     </div>
   </div>
   <div class="col-md-12 col-sm-12 col-xs-12">    
-    <input id="message" *ngIf='(user | async)?.uid' type="text" placeholder="Enter your message" (keyup.enter)='chatSend($event.target.value)' [(ngModel)]='chatMsg' />
+    <input id="message" *ngIf='(user | async)?.uid' type="text" placeholder="Enter your message. Press enter to send" (keyup.enter)='chatSend($event.target.value)' [(ngModel)]='chatMsg' />
   </div>
 </div>
