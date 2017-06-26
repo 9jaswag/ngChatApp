@@ -36,7 +36,10 @@ export class AppComponent {
   }
 
   chatSend (message: string) {
-    this.items.push({ message: message, name: this.username});
+    if(message.length > 0) {
+      this.items.push({ message: message, name: this.username});
+      console.log(message)
+    }
     this.chatMsg = '';
   }
 }
